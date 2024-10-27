@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsutools"
+description = "Linear Spectral Unmixing Tools for remote sensing"
+version = "0.1.0"
+authors = [
+    {name = "Tamsin", email = "your@email.address"},
+]
+keywords=['remote sensing', 'lsu', 'unmixing']
+readme = "README.md"
+dependencies = ["numpy", "scipy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = [
+    "--import-mode=importlib",
+]
