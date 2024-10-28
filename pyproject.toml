@@ -14,7 +14,7 @@ readme = "README.md"
 dependencies = ["numpy", "scipy"]
 
 [project.optional-dependencies]
-dev = ["pytest"]
+dev = ["pytest","tempfile"]
 
 [tool.pytest.ini_options]
 pythonpath = "src"
